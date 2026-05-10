@@ -10,6 +10,3 @@ Ensure you have CounterStrikeSharp installed on your server.
 Download the latest FlashingHtmlHudFix files.
 Place the plugin folder into game/csgo/addons/counterstrikesharp/plugins/.
 Restart your server or change the map.
-
-Author
-Created by Ghost
