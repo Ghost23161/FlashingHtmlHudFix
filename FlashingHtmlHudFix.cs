@@ -7,7 +7,7 @@ namespace FlashingHtmlHudFix
     public partial class FlashingHtmlHudFix : BasePlugin
     {
         public override string ModuleName => "FlashingHtmlHudFix";
-        public override string ModuleVersion => "1.0";
+        public override string ModuleVersion => "1.1";
         public override string ModuleAuthor => "Ghost";
 
         private CCSGameRulesProxy? _gameRulesProxy;
@@ -48,6 +48,7 @@ namespace FlashingHtmlHudFix
             if (gameRules.GameRestart != expectedState)
             {
                 gameRules.GameRestart = expectedState;
+                Utilities.SetStateChanged(proxy, "CCSGameRulesProxy", "m_pGameRules");
             }
         }
     }
